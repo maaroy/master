@@ -87,3 +87,13 @@ button.format.selected {
     background-color: #080;
     color: #fff;
 }
+
+input.button {
+    width: 200px;
+    color: rgb(247, 246, 246);
+    font-weight: 500;
+    background-color: #ce265b;
+}
+input.boxes {
+    width: 600px;
+}
