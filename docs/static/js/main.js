@@ -241,7 +241,7 @@ function setValue(value) {
 
     const visible = parts.join("-");
     const simpler =
-        value.slice(0, 4) + "!" + value.slice(4, 8) + "-" + value.slice(8, 12);
+        value.slice(0, 4) + "+" + value.slice(4, 8) + "-" + value.slice(8, 12);
     const redactd =
         visible.slice(0, 2) +
         "****-******-******-******-******-****" +
@@ -261,7 +261,7 @@ function setValue(value) {
 // }
 
 function correct(value) {
-    const CHARS_SYMBOLS = "-!";
+    const CHARS_SYMBOLS = "-+";
     const CHARS_NUMBERS = "0123456789";
     const CHARS_LOWERS = "abcdefghijklmnopqrstuvwxyz";
     const CHARS_UPPERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
