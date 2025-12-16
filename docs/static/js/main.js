@@ -261,7 +261,7 @@ function setValue(value) {
 // }
 
 function correct(value) {
-    const CHARS_SYMBOLS = "-+!";
+    const CHARS_SYMBOLS = "-!";
     const CHARS_NUMBERS = "0123456789";
     const CHARS_LOWERS = "abcdefghijklmnopqrstuvwxyz";
     const CHARS_UPPERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
