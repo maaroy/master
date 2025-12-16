@@ -48,12 +48,16 @@ code {
     border-radius: 3px;
 }
 #result {
-    background: #f7dc6f;
+    --background: #6ae3aa;
+    background-image: linear-gradient(to right, rgb(126, 168, 143), rgb(64, 143, 100), rgb(116, 158, 125));
     ---background: #fad7a0;
+    width: 600px !important;
     padding: 20px;
     padding-bottom: 40px;
     border-radius: 10px;
-    font-size: 1em;
+    font-size: 1.2em;
+    color: #ddd !important;
+    font-weight: 500;
     box-shadow: 5px 5px 5px rgb(188, 188, 188);
     ---border: 4px solid #ccc;
     text-align: center;
@@ -66,7 +70,7 @@ code {
 }
 #service {
     text-align: center;
-    box-shadow: 5px 5px 5px rgb(188, 188, 188);
+    box-shadow: 5px 5px 5px 5px rgb(210, 209, 209);
     background-color: #fffefe;
     border-color: #747272;
     border-width: 0.1px;
@@ -86,6 +90,10 @@ button {
     width: fit-content;
     padding: 0.1rem 0.5rem;
     box-shadow: 3px 3px 5px rgb(188, 188, 188);
+    a:hover {
+  background-color: yellow;
+  font-size: 38px;
+}
 }
 button.format {
     background-color: #ddd;
@@ -98,7 +106,9 @@ button.format {
 }
 
 button.format.selected {
-    background-color: #008800;
+    --background-color: #008800;
+    background-image: linear-gradient(to right, rgb(64, 143, 100), rgb(116, 158, 125));
+    ---background: #fad7a0;
     color: #fff;
 }
 
@@ -109,11 +119,12 @@ input.button {
     background-color: #ce265b;
 }
 .boxes {
-    width: 900px !important;
-    box-shadow: 8px 8px 5px red !important;
+    width: 600px !important;
+    box-shadow: 3px 3px 8px 3px rgb(198, 196, 196) !important;
 }
 
 input.fillbox { 
     font-size: 1em !important; 
+    --background-image: linear-gradient(to right, orange, yellow);
     color: #851657;
 }
