@@ -20,7 +20,6 @@ const formats = {
     visible: EMPTY_SERVICE,
     redactd: EMPTY_SERVICE,
     simpler: EMPTY_SERVICE,
-    
 };
 $result.innerText = EMPTY_SERVICE;
 
@@ -36,7 +35,7 @@ function loadServices() {
 }
 
 
-function save   (name) {
+function saveService(name) {
     name = name.trim();
     if (name.length < 1) {
         return;
@@ -262,10 +261,10 @@ function setValue(value) {
 // }
 
 function correct(value) {
-    const CHARS_SYMBOLS = "-+";
+    const CHARS_SYMBOLS = "-+!";
     const CHARS_NUMBERS = "0123456789";
-    const CHARS_LOWERS = "abcdefghijklmnopqrstuvwxyz!";
-    const CHARS_UPPERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ!";
+    const CHARS_LOWERS = "abcdefghijklmnopqrstuvwxyz";
+    const CHARS_UPPERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
     let hasSymbol = false;
     let hasNumber = false;
