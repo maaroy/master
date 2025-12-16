@@ -51,7 +51,7 @@ code {
     --background: #6ae3aa;
     background-image: linear-gradient(to right, rgb(126, 168, 143), rgb(64, 143, 100), rgb(116, 158, 125));
     ---background: #fad7a0;
-    width: 650px !important;
+    width: 7000px !important;
     padding: 20px;
     padding-bottom: 40px;
     border-radius: 10px;
@@ -119,7 +119,7 @@ input.button {
     background-color: #ce265b;
 }
 .boxes {
-    width: 650px !important;
+    width: 700px !important;
     box-shadow: 3px 3px 8px 3px rgb(198, 196, 196) !important;
 }
 
