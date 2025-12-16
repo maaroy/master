@@ -5,9 +5,12 @@
 body {
     max-width: 800px;
     margin: 40px auto;
+    font-family: avenir;
+    
 }
 h1 {
     margin-bottom: 1rem;
+    font-family: avenir;
 }
 form {
     margin: 0;
@@ -48,8 +51,10 @@ code {
     background: #f7dc6f;
     ---background: #fad7a0;
     padding: 20px;
+    padding-bottom: 40px;
     border-radius: 10px;
-    font-size: 1.5em;
+    font-size: 1em;
+    box-shadow: 5px 5px 5px rgb(188, 188, 188);
     ---border: 4px solid #ccc;
     text-align: center;
     ---display: none;
@@ -58,6 +63,13 @@ code {
     transition: background-color 0.05s ease;
     color: #000;
     user-select: all;
+}
+#service {
+    text-align: center;
+    box-shadow: 5px 5px 5px rgb(188, 188, 188);
+    background-color: #fffefe;
+    border-color: #747272;
+    border-width: 0.1px;
 }
 #result.new {
     --background: #f1c40f;
@@ -73,6 +85,7 @@ button {
     display: inline;
     width: fit-content;
     padding: 0.1rem 0.5rem;
+    box-shadow: 3px 3px 5px rgb(188, 188, 188);
 }
 button.format {
     background-color: #ddd;
@@ -83,8 +96,9 @@ button.format {
     margin-left: 0.2em;
     color: #000;
 }
+
 button.format.selected {
-    background-color: #080;
+    background-color: #008800;
     color: #fff;
 }
 
@@ -94,6 +108,12 @@ input.button {
     font-weight: 500;
     background-color: #ce265b;
 }
-input.boxes {
-    width: 600px;
+.boxes {
+    width: 900px !important;
+    box-shadow: 8px 8px 5px red !important;
+}
+
+input.fillbox { 
+    font-size: 1em !important; 
+    color: #851657;
 }

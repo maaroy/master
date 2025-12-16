@@ -20,6 +20,7 @@ const formats = {
     visible: EMPTY_SERVICE,
     redactd: EMPTY_SERVICE,
     simpler: EMPTY_SERVICE,
+    
 };
 $result.innerText = EMPTY_SERVICE;
 
@@ -34,7 +35,8 @@ function loadServices() {
     }
 }
 
-function saveService(name) {
+
+function save   (name) {
     name = name.trim();
     if (name.length < 1) {
         return;
@@ -121,7 +123,7 @@ function saveCreds() {
         localStorage.removeItem("password");
         showCreds(true);
     }
-    history.pushState({}, "", "/");
+    history.pushState({}, "", "./");
 
     return false;
 }
@@ -198,7 +200,7 @@ function isKeyboardEmpty(ev) {
 }
 
 function copyPassword() {
-    history.pushState({}, "", "/?service=" + encodeURIComponent($service.value));
+    history.pushState({}, "", "./?service=" + encodeURIComponent($service.value));
     let value = formats[format];
     if (format === "redactd") {
         value = formats["visible"];
@@ -262,8 +264,8 @@ function setValue(value) {
 function correct(value) {
     const CHARS_SYMBOLS = "-+";
     const CHARS_NUMBERS = "0123456789";
-    const CHARS_LOWERS = "abcdefghijklmnopqrstuvwxyz";
-    const CHARS_UPPERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    const CHARS_LOWERS = "abcdefghijklmnopqrstuvwxyz!";
+    const CHARS_UPPERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ!";
 
     let hasSymbol = false;
     let hasNumber = false;

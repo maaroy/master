@@ -15,7 +15,7 @@
         type="text"
         id="username"
         name="username"
-        class="boxes"
+        ---class="boxes"
         placeholder="Master username"
         required
         autocomplete="off"
@@ -25,7 +25,7 @@
         type="password"
         name="password"
         id="password"
-        class="boxes"
+        ---class="boxes"
         placeholder="Master password"
         required
         autocomplete="off"
@@ -41,6 +41,7 @@
         type="text"
         name="value"
         id="service"
+        class="boxes"
         placeholder="Service name"
         spellcheck="false"
         required
@@ -54,7 +55,11 @@
         <button class="format" id="simpler">Simpler</button>
         <br />
     </div>
-    <pre id="result"></pre>
+    <pre 
+        id="result"
+        class="fillbox"
+    ></pre>
+
     <ul id="services"></ul>
 </form>
 <script defer src="./static/js/main.js"></script>
