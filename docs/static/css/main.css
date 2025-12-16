@@ -51,11 +51,11 @@ code {
     --background: #6ae3aa;
     background-image: linear-gradient(to right, rgb(126, 168, 143), rgb(64, 143, 100), rgb(116, 158, 125));
     ---background: #fad7a0;
-    width: 7000px !important;
+    width: 700px !important;
     padding: 20px;
     padding-bottom: 40px;
     border-radius: 10px;
-    font-size: 1.2em;
+    font-size: 1.0em;
     color: #ddd !important;
     font-weight: 500;
     box-shadow: 5px 5px 5px rgb(188, 188, 188);
